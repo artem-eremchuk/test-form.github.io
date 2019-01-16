@@ -1,0 +1,431 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+	 color: #000000;
+	 font-family: 'Roboto', sans-serif;
+	 font-size: 14px;
+	 font-weight: 400;
+}
+
+.container{
+	width: 1080px;
+	margin: 0 auto;
+}
+
+section {
+	margin-top: 104px;	
+	display: block;
+}
+
+a {
+	color: #2196f3;
+}
+
+button {
+	background-color: #e5e9ef;
+	color: #282828;
+	font-size: 16px;
+	text-align: center;
+	padding: 14px 33px;
+	border: none;
+	cursor: pointer;
+	box-sizing: border-box;
+	border: 3px solid #fff;
+	border-radius: 4px;
+	outline: none;
+}
+
+button:hover{
+	box-sizing: border-box;
+	background: #c3c7cc;
+}
+
+button:focus {
+	border: 3px solid #f2f4f7;
+}
+
+.active-btn {
+	background-color: #008cfe;
+	color: #fff;
+	outline: none;
+	margin-right: 24px;
+	padding: 14px 22px;
+}
+
+.active-btn:hover {
+	background-color: #008be2;
+}
+
+.active-btn:focus {
+	background-color: #0091e1;
+	border: 3px solid #a2d0fd;
+}
+
+input[type=text] {
+	border: none;
+	border-radius: 4px;
+	background-color: #f7f7fa;
+	padding: 23px 17px 5px;
+	font-size: 16px;
+	font-weight: 500;
+	color: #44414d;
+	margin-top: 20px;
+	min-width: 336px;
+}
+
+input[type=text]:hover {
+	background-color: #eaeaee;
+}
+
+input[type=text]:focus {
+	box-shadow: 0 0 0 3px rgba(70, 162, 252, 0.5);
+}
+
+input[type=text]::placeholder{
+	color: rgba(39, 37, 42, 0.4);
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.form-item {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-left: 32px;
+}
+
+.form-item:first-child {
+	margin-left: 0;
+}
+
+.form-input {
+	height: 55px;
+	box-sizing: border-box;
+}
+
+.form-label {
+	position: absolute;
+	pointer-events: none; 
+	left: 17px;
+	top: 15px;
+	line-height: 40px;
+	height: 13px;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+input:focus ~ label,
+label:active{
+    font-weight: bold;
+    color: #2196f3;
+}
+
+.form-textarea {
+	position: relative;
+}
+
+.form-textarea-label {
+	position: absolute;
+	pointer-events: none; 
+	left: 17px;
+	top: 15px;
+	line-height: 55px;
+	height: 13px;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+	box-sizing: border-box;
+	border: none;
+	border-radius: 4px;
+	background-color: #f7f7fa;
+	padding: 25px 17px;
+	margin: 27px 0;
+	resize: none;
+	color: #44414d;
+	font-family: Roboto;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+textarea::placeholder{
+	color: rgba(39, 37, 42, 0.4);
+}
+
+textarea:focus::placeholder {
+  	color: transparent;
+}
+
+textarea:focus ~ label,
+label:active{
+    font-weight: bold;
+    color: #2196f3;
+}
+
+.block-attention {
+	position: relative;
+	margin-top: 36px;
+	border-radius: 4px;
+	background-image: linear-gradient(-205deg, #ff7da7 0%, #ffa3a4 100%);
+	color: #fff;
+	padding: 17px 34px 16px 109px;
+	box-sizing: border-box;
+	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.block-attention:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 45px;
+	left: 30px;
+	height: 30px;
+	width: 34px;
+	background: url(../img/attention-img.png);
+}
+
+.block-attention > p {
+	margin: 17px 0 0 0;
+}
+
+.block-attention-title {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.social-message {
+	display: inline-block;
+	position: relative;
+	margin-left: 35px;
+	margin-top: 70px;
+	width: 241px;
+	height: 64px;
+	box-shadow: 0 3px 6px 1px rgba(0, 0, 0, 0.09);
+	border: 8px solid #fcfcfc;
+	box-sizing: border-box;
+	background-color: #ffffff;
+	text-align: center;
+}
+
+.social-message-img {
+	position: absolute;
+	width: 54px;
+	height: 54px;
+	left: 50%;
+	margin-left: -27px;
+	transform: translateY(-35px);
+}
+.social-message-first {
+	margin-left: 0;
+}
+
+.social-message-first > .social-message-img {
+	background: url(../img/telegram.png);
+}
+
+.social-message-second > .social-message-img {
+	background: url(../img/icq.png);
+}
+
+.social-message-third > .social-message-img {
+	background: url(../img/skype.png);
+}
+
+.social-message-fourth > .social-message-img {
+	background: url(../img/slack.png);
+}
+
+.social-message-name {
+	position: relative;
+	display: inline-block;
+	transform: translateY(21px);
+	color: #2c2c2c;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.social-message-name:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 4px;
+	left: -13px;
+	height: 9px;
+	width: 9px;
+	border-radius: 50%;
+	background-color: #26a69a;
+}
+
+.social-message-second > .social-message-name:before {
+	content: none;
+}
+
+.social-message-third > .social-message-name:before {
+	content: none;
+}
+.social-message:hover {
+	cursor: pointer;
+}
+
+.social-message-second:hover > .social-message-name:before {
+	content: "";
+}
+
+.social-message-second:hover > .social-message-img {
+	background: url(../img/icq-active.png);
+}
+
+.social-message-third:hover > .social-message-name:before {
+	content: "";
+}
+
+.social-message-third:hover > .social-message-img {
+	background: url(../img/skype-active.png);
+}
+
+.social-message-options {
+	float: left;
+	position: relative;
+	margin-left: 42px;
+	margin-bottom: 100px;
+	width: 238px;
+	height: 118px;
+	border-radius: 0 0 4px 4px;
+	background-color: rgba(234, 234, 238, 0.5);
+	user-select: none; 
+}
+
+.social-message-options-first {
+	margin-left: 1px;
+}
+
+.social-message-options-fourth:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+}
+
+.social-message-options-btn {
+	display: block;
+	margin: 0 auto;
+	margin-top: 24px;
+	padding: 10px 36px;
+	border-radius: 4px;
+	border: 3px solid transparent;
+	background-color: rgba(0, 0, 0, 0.08);
+	color: #282828;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+.social-message-options-btn:focus {
+	border: 3px solid rgba(0, 0, 0, 0.08);
+}
+
+.checkbox-block {
+	margin: 0 auto;
+	margin-top: 16px;
+	text-align: center;
+}
+
+.checkbox-block > input:focus ~ label {
+    font-weight: normal;
+    color: #282828;
+}
+
+.checkbox-block > input:active ~ label {
+    font-weight: normal;
+    color: #282828;
+}
+
+.checkbox-block > input[type=checkbox] + label {
+	display: block;
+}
+
+.checkbox-block > input[type=checkbox] {
+	display: none;
+}
+
+.checkbox-block > input[type=checkbox] + label:before {
+	content: "\2714";
+	border-radius: 2px;
+	display: inline-block;
+	border: 1px solid black;
+	width: 15px;
+	height: 15px;
+	margin-right: 10px;
+	vertical-align: bottom;
+	color: transparent;
+	background-color: rgba(234, 234, 238, 0.5);
+	transition: .2s;
+	font-size: 10px;
+}
+
+.checkbox-block > input[type=checkbox]:checked + label:before {
+	background-color: #008dfe;
+	color: #fff;
+	border: 1px solid transparent;
+}
+
+.social-message-options-text {
+	color: #2c2c2c;
+	font-size: 13px;
+	font-weight: 400;
+	padding-top: 24px;
+	padding-left: 24px;
+	cursor: pointer;
+}
+
+.social-message-options-text::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 29px;
+	right: 24px;
+	height: 18px;
+	width: 15px;
+	background: url(../img/social-message-options-img.png);
+	cursor: pointer;
+}
+
+.social-message-options-text:hover::after{
+	background: url(../img/social-message-option-img-active.png);
+}
+
+.social-message-options-text-2{
+	color: #2c2c2c;
+	font-size: 13px;
+	font-weight: 400;
+	padding-top: 14px;
+	padding-left: 24px;
+	cursor: pointer;
+}
+
+.social-message-options-text-2::after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 77px;
+	right: 24px;
+	height: 18px;
+	width: 15px;
+	background: url(../img/social-message-options-img.png);
+	cursor: pointer;
+}
+
+.social-message-options-text-2:hover::after{
+	background: url(../img/social-message-option-img-active.png);
+}
